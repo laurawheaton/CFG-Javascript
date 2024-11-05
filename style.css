@@ -1,0 +1,81 @@
+/* alignment and simple styling of header and body */
+h1 {
+  text-align: center;
+  font-size: 40px;
+  background-image: url("https://i.ibb.co/bJkXDYS/illustration.png");
+  padding: 50px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff5ed;
+  padding: 20px;
+}
+
+/* styling and alignment of the tabs */
+.tabs {
+  display: flex;
+  margin-bottom: 10px;
+  
+}
+
+.tab-button {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    cursor: pointer;
+    margin-right: 5px;
+}
+/* make tab change colour when hovered */
+.tab-button:hover {
+  background-color: 
+/*#3EB489*/#fff5ed;
+  color: black;
+}
+/* styling of the active tab */
+.tab-button.active {
+    background-color: 
+/*#3EB489*/ #353f99;
+    color: white;
+}
+/* styling content of each tab */
+.tab-content {
+  display: none;
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: /*#50c878*/ #7f8ee5;
+  border-radius: 10px
+}
+
+.tab-content.active {
+    display: block;
+}
+
+button {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: lightgray;
+}
+
+img {
+  height: 200px;
+}
+
+.all-recipes {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.recipe {
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 22%;
+  box-sizing: border-box;
+  text-align: center;
+}

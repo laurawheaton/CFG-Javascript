@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Meal Planner - Final MASTER FILE</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- header -->
+<div id="meal-planner">
+  <h1 id="header">Meal Planner</h1>
+ 
+  <!--<div>
+    <img src="https://eggs.ca/wp-content/uploads/2024/06/MedBowl-EGG.jpg">
+  </div>-->
+  
+
+  <!-- tabs -->
+  <div class="tabs">
+    <button class="tab-button active" tab-number="tab1">Breakfast</button>
+    <button class="tab-button" tab-number="tab2">Lunch</button>
+    <button class="tab-button" tab-number="tab3">Dinner</button>
+    <button class="tab-button" tab-number="tab4">Shopping List</button>
+  </div>
+  <!-- content of each tab -->
+  <!-- Breakfast --> 
+  <div class="tab-content active" id="tab1">
+    
+    <div class="all-recipes">
+      <div class="recipe">
+    <h2>Smoothie</h2>
+    <h4>Ingredients list</h4>
+    <ul id="smoothie-ingredients"></ul>
+    <h4>Method</h4>
+        <p><strong><em>STEP 1</em></strong></p>
+    <p>Put all the ingredients in a blender and whizz for 1 min until smooth.</p>
+        <p><strong><em>STEP 2</em></strong></p>
+    <p>Pour the banana oat smoothie into a glass to serve. (optional)</p>
+    </div>
+    
+      <div class="recipe">
+    <h2>Breakfast Burrito</h2>
+    <h4>Ingredients list</h4>
+    <ul id="burrito-ingredients"></ul>
+    <h4>Method</h4>
+        <p><strong><em>STEP 1</em></strong></p>
+    <p>Whisk the chipotle paste with the egg and some seasoning in a jug. Heat the oil in a large frying pan & add the kale and tomatoes.</p>
+        <p><strong><em>STEP 2</em></strong></p>
+    <p>Cook until the kale is wilted and the tomatoes have softened, then push everything to the side of the pan. Pour the beaten egg into the cleared half of the pan and scramble. Layer everything into the centre of your wrap, topping with the avocado, then wrap up and eat immediately.</p>
+    </div>
+    
+      <div class="recipe">
+    <h2>Omelet</h2>
+    <h4>Ingredients list</h4>
+  <ul id="omeletIngredients"></ul>
+    <h4>Method</h4>
+  <p><strong><em>STEP 1</em></strong></p>
+   <p>Dredge the tomato slices in the beaten egg and then the breadcrumbs.</p>
+     <p><strong><em>STEP 2</em></strong></p>
+      <p>Heat 1 to 2 tablespoons of oil in a small skillet to medium-high. Fry the tomato slices until golden brown on each side, about 2 minutes per side.</p>
+ <p><strong><em>STEP 3</em></strong></p>
+      <p>Remove from the pan and set on a paper towel-lined plate to drain. Lay out the slices of toasted bread on a work surface.</p>
+  <p><strong><em>STEP 4</em></strong></p>
+      <p>Spread the aioli evenly over both slices of bread.</p>
+   <p><strong><em>STEP 5</em></strong></p>
+      <p>Top 1 slice with 2 slices of fried tomato, the bacon, and lettuce. Top with the other piece of bread and cut the sandwich in half on a diagonal.</p>
+      </div>
+    
+      <div class="recipe">
+    <h2>Oatmeal</h2>
+    <h4>Ingredients list</h4>
+        <ul id="oatmeal-ingredients"></ul>
+    <h4>Method</h4>
+        <p><strong><em>STEP 1</em></strong></p>
+        <p>Boil water or milk. Add oats and cook for 5-7 minutes. Add honey and toppings.</p>
+      </div>
+    </div>
+  </div>
+  <!-- Lunch -->
+  <div class="tab-content" id="tab2">
+    <div class="all-recipes">
+      <div class="recipe">
+    <h2>Chunky Vegetable Soup</h2>
+    <h4>Ingredients List</h4>
+        <ul id="soup-ingredients"></ul>
+    <h4>Method</h4>
+        <p><strong><em>STEP 1</em></strong></p>
+        <p>Heat the oil in a large pan over a medium heat and fry the leeks, garlic and potatoes for 10-15 mins.
+</p>
+        <p><strong><em>STEP 2</em></strong></p> 
+        <p>Pour over the stock, add asparagus stems, beans, tomatoes and basil.
+</p>
+        <p><strong><em>STEP 3</em></strong></p>
+        <p>Bring to the boil, then reduce the heat to a simmer, cover and cook over a medium heat for 10 mins until the veg is tender.</p>
+      </div>
+      
+      <div class="recipe">
+    <h2>10-minute couscous salad</h2>
+    <h4>Ingredients List</h4>
+      <ul id="couscous-ingredients">         </ul>
+    <h4>Method</h4>
+        <p><strong><em>STEP 1</em></strong></p>
+        <p>Tip the couscous into a large bowl and pour over the stock. Cover, then leave for 10 mins until fluffy and all the stock has been absorbed. Meanwhile, slice the onions and pepper, and dice the cucumber. Add these to the couscous, fork through the pesto, crumble in the feta, then sprinkle over pine nuts to serve.
+</p>
+      </div>
+      
+      <div class="recipe">
+    <h2>Carpaccio Salad</h2>
+    <h4>Ingredients List</h4> 
+<ul id= "carpaccioSalad"></ul> 
+    <h4>Method</h4>
+   <p><strong><em>STEP 1</em></strong></p>
+       <p>Drizzle zucchini slices with extra virgin olive oil and lemon juice, and season to taste with salt and pepper.</p>
+    
+ <p><strong><em>STEP 2</em></strong></p>
+    <p>Arrange on four dinner plates in overlapping concentric circles. Sprinkle Parmesan cheese, walnuts, and basil over top. Serve immediately.</p>
+      </div>
+      
+      <div class="recipe">
+    <h2>Roasted Turkey</h2>
+    <h4>Ingredients List</h4>
+        <ul id="turkey-ingredients"></ul>
+    <h4>Method</h4>
+        <p><strong><em>STEP 1</em></strong></p>
+        <p>Rub turkey with olive oil and spices. Roast in the oven at 350°F (175°C) for 1.5 to 2 hours.</p>
+      </div>
+    </div>
+  </div>
+  <!-- Dinner -->
+  <div class="tab-content" id="tab3">
+    <div class="all-recipes">
+      <div class="recipe">
+    <h2>Cheesy Vegetable Pasta Bake</h2>
+    <h4>Ingredients List</h4>
+        <ul id="pasta-ingredients"></ul>
+    <h4>Method</h4>
+        <p><strong><em>STEP 1</em></strong></p>
+        <p>Preheat your oven to 220°C/200°C fan/gas mark 7. Halve the pepper and discard the core and seeds. Chop into 2cm chunks. Thinly slice the mushrooms.
+</p>
+        <p><strong><em>STEP 2</em></strong></p> 
+        <p>Meanwhile, bring a large saucepan of water to the boil with 1/2 tsp salt. When boiling, add the penne to the water and bring back to the boil. Cook until tender, 12 mins. Once cooked, drain in a colander and pop back into the pan. Drizzle with oil and stir through to stop it sticking together.
+</p>
+        <p><strong><em>STEP 3</em></strong></p>
+        <p>While the pasta cooks, trim the courgette, then quarter lengthways. Chop into 2cm chunks. Peel and grate the garlic (or use a garlic press). Halve, peel and chop the onion into small pieces. Heat a large frying pan on high heat (no oil). Once hot, add the courgette and cook until charred, 6-8 mins total. Turn only every couple of mins - this will result in the courgette picking up some nice colour. Once cooked, season with salt and pepper, then transfer to a bowl.
+</p>
+        <p><strong><em>STEP 4</em></strong></p>
+        <p>Return the (now empty) frying pan to medium heat with a drizzle of oil. Once hot, add the onion and pepper and stir-fry until softened, 4-5 mins. Add the mushrooms and fry until starting to brown, 5-6 mins. Add the garlic and stir-fry for 30 secs, then stir in the chopped tomatoes, veg stock paste, tomato puree, Italian style herbs, sugar and water for the sauce (see pantry for both amounts). Bring to the boil, then lower the heat and simmer, stirring occasionally, until thickened, 7-8 mins.
+</p>
+        <p><strong><em>STEP 5</em></strong></p>
+        <p>While the sauce simmers, grate the Cheddar. Drain the mozzarella and tear into small pieces. Once everything is ready, stir the charred courgette and cooked penne into the sauce. Taste and season with salt and pepper if needed. Transfer to an ovenproof dish and top with the mozzarella and Cheddar. Bake on the top shelf of your oven until the cheese is bubbling and golden brown, 10-15 mins, and serve.
+</p>
+      </div>
+      
+      <div class="recipe">
+    <h2>Sticky Lemon Tofu</h2>
+         <h4>Ingredients List</h4>
+        <h5>Crispy Tofu</h5>
+        <ul id="tofu-ingredients"></ul>
+        <h5>Lemon Sauce</h5>
+        <ul id="lemonsauce-ingredients"></ul>
+    <h4>Method</h4>
+        <p><strong><em>STEP 1</em></strong></p>
+        <p>Drain the tofu and cut it into bite size cubes.</p>
+         <p><strong><em>STEP 2</em></strong></p>
+        <p>Place the cubes in a mixing bowl, drizzle the soy sauce over them and stir gently.</p>
+         <p><strong><em>STEP 3</em></strong></p>
+        <p>Then add the cornstarch, season with salt and pepper, and stir until the tofu is coated evenly.</p>
+         <p><strong><em>STEP 4</em></strong></p>
+        <p>In a large frying pan on medium-high heat, heat up the oil. When it's hot add the coated tofu cubes and fry until they are golden brown. Turn them over using tongs or a spatula to get the tofu evenly fried.</p>
+         <p><strong><em>STEP 5</em></strong></p>
+        <p>When the tofu is cooked, transfer it to a plate so you can use the pan to make the sauce.</p>
+         <p><strong><em>STEP 6</em></strong></p>
+        <p>Reduce heat to medium. Add more oil to the frying pan, followed by minced garlic and ginger. Fry for 1 minute.</p>
+         <p><strong><em>STEP 7</em></strong></p>
+        <p>Then add the water, stock powder, lemon juice, zest, soy sauce and sugar and stir together.</p>
+         <p><strong><em>STEP 8</em></strong></p>
+        <p>Finally mix the cornstarch with 2 teaspoons of water, and add this slurry to the pan while stirring. Simmer the sauce until it's thick and sticky. Stir frequently.</p>
+         <p><strong><em>STEP 9</em></strong></p>
+        <p>Combine the tofu with the sauce and serve with rice, noodles or veggies of your choice. Garnish with spring onions or sesame seeds.</p>
+      </div>
+      
+      <div class="recipe">
+    <h2>Chicken Alfredo</h2>
+    <h4>Ingredients List</h4>  
+   <ul id= "chickenAlfredo"></ul>
+        <h4>Method</h4>
+     <p><strong><em>STEP 1</em></strong></p>
+  <p>Season chicken breast with salt, black pepper, and garlic powder from both sides. Add the chicken to a hot grill. If your grill is too hot, you will not need oil and the chicken will not stick to it. Cook the chicken breast for 3 to 4 minutes on each side.</p>
+    
+   <p><strong><em>STEP 2</em></strong></p>
+    
+    <p>Remove and cover immediately with another plate or aluminum foil for 3 minutes, this will allow the chicken to cook further from the inside and stay tender. Cut the chicken breast into bite size, and keep aside.</p>
+    
+    <p><strong><em>STEP 3</em></strong></p>
+    <p>Boil the spaghetti for nine minutes. Drain and then rinse with cold water.</p>
+    
+    <p><strong><em>STEP 4</em></strong></p>
+     <p>In a hot pan, add the butter and the chicken, cook for one minute.</p>
+    
+     <p><strong><em>STEP 5</em></strong></p>  
+      <p>To make the Alfredo, mix the milk with cornstarch and pour it over the chicken. When it comes to a boil add the Parmesan cheese. Stir for one minute then add the spaghetti. Mix well. If you wish you can season with black pepper.</p>   
+    
+    <p><strong><em>STEP 6</em></strong></p>
+    <p>Cook for one extra minute and then serve immediately. Sprinkle more Parmesan cheese if you wish.</p> 
+      </div>
+      
+      <div class="recipe">
+    <h2>Sausages</h2>
+    <h4>Ingredients List</h4>
+        <ul id="sausage-ingredients"></ul>
+    <h4>Method</h4>
+        <p><strong><em>STEP 1</em></strong></p>
+        <p>Heat oil in a pan, cook sausages for 10-12 minutes. Add vegetables and sauté until soft.
+</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Shopping list -->
+  <div class="tab-content" id="tab4">
+  
+   <div><span>Add New Item:</span>
+      <input type="text" id="new-item" placeholder="Groceries">
+      <button onclick="addNewItem()">Add</button>
+     <button onclick="clearList()">Clear</button>
+     <ul id="shopping-list"></ul>
+   </div> 
+  </div>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
